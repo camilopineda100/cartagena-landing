@@ -1,7 +1,5 @@
 import React from 'react'
 import { useState } from 'react'
-import heroVideo from '../../hero-video.mp4'
-import heroPoster from '../../hero-poster.JPG'
 import './Header.css'
 
 function Header() {
@@ -18,7 +16,7 @@ function Header() {
     <div className="header">
       <img 
         className="poster"
-        src={heroPoster} 
+        src={`${process.env.PUBLIC_URL}/images/hero-poster.jpg`} 
         alt="hero poster"
         style={{
           opacity: playingVideo ? 0 : 1,
@@ -35,7 +33,7 @@ function Header() {
           transition: "opacity, 2s ease-in-out",
         }}
       >
-        <source src={heroVideo} type="video/mp4"/>
+        <source src={`${process.env.PUBLIC_URL}/videos/hero-video.mp4`} type="video/mp4"/>
       </video>
 
       <div className="hero-content">
