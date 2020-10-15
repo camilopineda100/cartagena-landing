@@ -1,15 +1,14 @@
 import React from 'react'
 import { useState } from 'react'
-import './Header.css'
-
 import heroVideo from '../../hero-video.mp4'
 import heroPoster from '../../hero-poster.JPG'
+import './Header.css'
 
 function Header() {
-  const [playing, setPlaying] = useState(false)
+  const [playingVideo, setPlaying] = useState(false)
   
   const handleOnCanPlay = (event) => {
-    if(!playing) {
+    if(!playingVideo) {
       event.target.play()
       setPlaying(true)  
     }
@@ -21,18 +20,30 @@ function Header() {
         className="poster"
         src={heroPoster} 
         alt="hero poster"
+        style={{
+          opacity: playingVideo ? 0 : 1,
+          transition: "opacity, 2s ease-in-out",
+        }}
       />
+
       <video
         className="video" 
         loop muted
         onCanPlayThrough={handleOnCanPlay}
         style={{
-          opacity: playing ? 1 : 0,
+          opacity: playingVideo ? 1 : 0,
           transition: "opacity, 2s ease-in-out",
         }}
       >
         <source src={heroVideo} type="video/mp4"/>
       </video>
+
+      <div className="hero-content">
+        <h1 className="hero-title">
+          <span>POR LOS</span>
+          <span>AIRES</span>
+        </h1>
+      </div>
     </div>
   ) 
 }
