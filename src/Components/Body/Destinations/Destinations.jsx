@@ -8,9 +8,17 @@ function Destinations(){
       <h2>DESTINOS</h2>
       
       <p>Descubre y comparte los destinos mas fantásticos alrededor del mundo</p>
-    
-      <div className="card">
+
+      <div className="slider">
+        <div className="card">
         
+        </div>
+        <div className="card">
+        
+        </div>
+        <div className="card">
+        
+        </div>
       </div>
     </div>
   )
