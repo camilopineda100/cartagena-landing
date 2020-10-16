@@ -1,9 +1,10 @@
 import React from 'react';
+import Destinations from './Destinations/Destinations'
 
 function Body() {
   return(
-    <div>
-      Body content
+    <div className='body'>
+      <Destinations />
     </div>
   )
 }
