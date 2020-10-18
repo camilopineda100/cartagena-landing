@@ -37,10 +37,18 @@ function Header() {
       </video>
 
       <div className="hero-content">
-        <h1 className="hero-title">
-          <span>POR LOS</span>
-          <span>AIRES</span>
-        </h1>
+        <div className="content-text">
+          <h1 className="hero-title">
+            <span className="hero-title-span1">BY THE</span>
+            <span className="hero-title-span2">AIR</span>
+          </h1>
+          
+          <div className="hero-subtitle">
+            <span>
+              The world like never seen before
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   ) 
