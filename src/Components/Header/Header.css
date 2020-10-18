@@ -32,9 +32,10 @@
 }
 
 .content-text {
+  position: relative;
   max-width: 70%;
   text-align: center;
-  margin-top: 150px;
+  top: 20%
 }
 
 .hero-title {
@@ -57,13 +58,25 @@
   margin-top: 10px;
   text-align: center;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   color: #d7d6d5;
   line-height: 1;
 }
 
-@media(min-width: 769px) {
-  .hero-title {
+/* Laptop and desktop */
+@media only screen 
+  and (min-width: 1024px) {
+
+  .hero-title-span1 {
+    font-size: 38px;    
+  }
+
+  .hero-title-span2 {
     font-size: 50px;    
   }
+
+  .hero-subtitle {
+    font-size: 25px;
+  }
 }
+
