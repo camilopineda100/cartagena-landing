@@ -1,0 +1,30 @@
+.journey {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+  height: 100vh;
+}
+
+.journey-title {
+  margin-top: 30px;
+}
+
+.journey-subtitle {
+  text-align: center;
+  margin: 20px 0px;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.journey-main {
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+}
+
+.journey-video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
