@@ -10,25 +10,25 @@ function Destinations(){
       <p className="destinations-subtitle">Discover and share the most amazing destinations around the world</p>
 
       <div className="slider">
-        <div className="card">
+        <div className="slide">
           <img 
-            className="card-image"
+            className="slide-image"
             src={`${process.env.PUBLIC_URL}/images/destinations/destination1.jpg`} 
             alt="destination"
           />
         </div>
 
-        <div className="card">
+        <div className="slide">
           <img 
-            className="card-image"
+            className="slide-image"
             src={`${process.env.PUBLIC_URL}/images/destinations/destination2.jpg`} 
             alt="destination"
           />
         </div>
 
-        <div className="card">
+        <div className="slide">
           <img 
-            className="card-image"
+            className="slide-image"
             src={`${process.env.PUBLIC_URL}/images/destinations/destination3.jpg`} 
             alt="destination"
           />
