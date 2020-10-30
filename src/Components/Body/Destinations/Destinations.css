@@ -65,6 +65,9 @@
   background-color: #d7d6d5;
 }
 
+.slide-button-active {
+  background-color: tomato;
+}
 @media(min-width: 426px) {
   .slide {
     min-width: 150px;

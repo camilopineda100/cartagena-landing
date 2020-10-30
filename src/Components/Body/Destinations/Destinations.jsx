@@ -1,8 +1,32 @@
 import React from 'react';
+import { useEffect, useState } from 'react';
 
 import './Destinations.css';
 
 function Destinations(){
+  const [currentSlide, setCurrentSlide] = useState('slide1')
+
+  const observerOptions = {
+    root: document.querySelector('.slides-wrapper'),
+    threshold: 0.5
+  }
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((observedEntries, observer) => {
+      observedEntries.forEach( entry => {
+        if(entry.isIntersecting) {
+          setCurrentSlide(entry.target.id)
+        }
+      })
+    }, observerOptions)
+
+    const slides = document.querySelectorAll('.slide')
+
+    slides.forEach((slide) => {
+      observer.observe(slide)
+    })
+  })
+
   return(
     <div className="destinations">
       <h2 className="destinations-title">DESTINATIONS</h2>
@@ -37,9 +61,17 @@ function Destinations(){
         </div>
 
         <div className="slides-buttons">
-          <a className="slide-button" href="#slide1"></a>
-          <a className="slide-button" href="#slide2"></a>
-          <a className="slide-button" href="#slide3"></a>
+          <span 
+            className={`slide-button ${currentSlide === 'slide1' ? 'slide-button-active' : ''}`}
+          />
+
+          <span 
+            className={`slide-button ${currentSlide === 'slide2' ? 'slide-button-active' : ''}`}
+          />
+
+          <span 
+            className={`slide-button ${currentSlide === 'slide3' ? 'slide-button-active' : ''}`}
+          />
         </div>
       </div>
     </div>
