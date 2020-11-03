@@ -1,0 +1,36 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  height: 100%;
+  width: 100vw;
+}
+
+.slides-wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+}
+
+.slides-buttons {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 20px;
+  width: 50px;
+}
+
+.slide-button {
+  min-width: 10px;
+  min-height: 10px;
+  border-radius: 50%;
+  background-color: #d7d6d5;
+}
+
+.slide-button-active {
+  background-color: tomato;
+}
