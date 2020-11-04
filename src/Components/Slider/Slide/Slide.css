@@ -4,6 +4,7 @@
   background: #d7d6d5;
   object-fit: cover;
   scroll-snap-align: center;
+  scroll-snap-stop: always;
   scroll-behavior: smooth;
 }
 
