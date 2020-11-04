@@ -16,3 +16,9 @@
   font-size: 18px;
   line-height: 1;
 }
+
+.slider-container {
+  width: 100vw;
+  flex-grow: 1;
+  overflow: hidden;
+}

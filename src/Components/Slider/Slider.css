@@ -4,14 +4,15 @@
   position: relative;
   align-items: center;
   height: 100%;
-  width: 100vw;
+  width: 100%;
 }
 
 .slides-wrapper {
-  display: flex;
-  height: 100%;
   width: 100%;
+  height: 100%;
+  overflow-y: hidden;
   overflow-x: auto;
+  white-space: nowrap;
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
 }

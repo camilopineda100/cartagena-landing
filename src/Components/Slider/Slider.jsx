@@ -31,25 +31,25 @@ function Slider(props) {
 
   return (
     <div className="slider">
-        <div className="slides-wrapper">
-          {images.map((image, index) => 
-            <Slide
-              key={index}
-              id={`slide-${index}`}
-              imageUrl={image}
-            />
-          )}
-        </div>
-
-        <div className="slides-buttons">
-          {images.map((image, index) =>
-            <span
-              key={index} 
-              className={`slide-button ${`slide-${index}` === currentSlide ? 'slide-button-active' : ''}`}
-            />
-          )}
-        </div>
+      <div className="slides-wrapper">
+        {images.map((image, index) => 
+          <Slide
+            key={index}
+            id={`slide-${index}`}
+            imageUrl={image}
+          />
+        )}
       </div>
+
+      <div className="slides-buttons">
+        {images.map((image, index) =>
+          <span
+            key={index} 
+            className={`slide-button ${`slide-${index}` === currentSlide ? 'slide-button-active' : ''}`}
+          />
+        )}
+      </div>
+    </div>
   )
 }
 

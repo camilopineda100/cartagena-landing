@@ -10,13 +10,16 @@ function Destinations(){
       
       <p className="destinations-subtitle">Discover and share the most amazing destinations around the world</p>
       
-      <Slider
-        images={[
-          `${process.env.PUBLIC_URL}/images/destinations/destination1.jpg`,
-          `${process.env.PUBLIC_URL}/images/destinations/destination2.jpg`,
-          `${process.env.PUBLIC_URL}/images/destinations/destination3.jpg`
-        ]}
-      />
+      <div className="slider-container">
+        <Slider
+          images={[
+            `${process.env.PUBLIC_URL}/images/destinations/destination1.jpg`,
+            `${process.env.PUBLIC_URL}/images/destinations/destination2.jpg`,
+            `${process.env.PUBLIC_URL}/images/destinations/destination3.jpg`
+          ]}
+        />
+      </div>
+      
     </div>
   )
 }
