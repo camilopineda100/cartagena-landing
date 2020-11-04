@@ -6,9 +6,10 @@ import './Destinations.css';
 function Destinations(){
   return(
     <div className="destinations">
-      <h2 className="destinations-title">DESTINATIONS</h2>
-      
-      <p className="destinations-subtitle">Discover and share the most amazing destinations around the world</p>
+      <div className="text-container">
+        <h2 className="destinations-title">DESTINATIONS</h2>
+        <p className="destinations-subtitle">Discover and share the most amazing destinations around the world</p>
+      </div>
       
       <div className="slider-container">
         <Slider

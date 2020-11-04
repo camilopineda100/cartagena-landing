@@ -6,6 +6,10 @@
   height: 100vh;
 }
 
+.text-container {
+  text-align: center;
+}
+
 .destinations-title {
   margin-top: 30px;
 }
@@ -21,4 +25,25 @@
   width: 100vw;
   flex-grow: 1;
   overflow: hidden;
+}
+
+/* Laptop and desktop */
+@media only screen 
+  and (min-width: 1024px) {
+  .destinations {
+    flex-direction: row;
+  }
+
+  .destinations > div {
+    padding: 0 5%;
+  }
+
+  .text-container {
+    width: 35%;
+  }
+
+  .slider-container {
+    width: 65%;
+    height: 80%;
+  }
 }
